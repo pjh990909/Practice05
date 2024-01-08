@@ -62,11 +62,16 @@ public class Book {
 	}
 
 	public void rent() {
-
+		if(stateCode==0) {
+			System.out.println(title + "이(가) 대여 됐습니다.");
+		}else {
+			
+		}
 	}
 
 	public void print() {
-
+		System.out.println(bookNo + " 책 제목:" + title + ", 작가:" + author ", 대여 유무:");
+		
 	}
 
 }
